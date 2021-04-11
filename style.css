@@ -1,0 +1,129 @@
+
+
+.gallery{
+    max-width:1280px;
+    background-color: bisque;
+    padding:10px;
+    margin:10px auto;
+}
+.teams-box{
+    height:100%;
+    background-color:#fff;
+    max-width:1180px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius:10px;
+    padding:15px 10px}
+.teams-box .teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right: auto;
+}
+.teams-box .teams .team {
+    width:180px;
+    height:150px;
+    margin:5px;
+    position: relative;
+    display: flex;
+}
+.teams-box .teams .team:hover  .overlay{
+    opacity:1;
+    width:100%;
+    height:100%;
+}
+.teams-box .teams .team .team-link {
+    display:block;
+    width:100%;
+    height:100%;
+}
+.teams-box .teams .team .team-link .team-img {
+    width:100%;
+    height:100%;
+    display: block;
+    border-radius: 10px;
+}
+.teams-box .teams .team .overlay {
+    position:absolute;
+    width:0;
+    height:0;
+    left:0;
+    top:0;
+    overflow: hidden;
+    background-color:rgba(235, 226, 226, 0.404);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:fuchsia;
+    opacity: 0;
+    transition: all .5s ease;
+    border-radius:10px;
+    border:1px solid palevioletred;
+}
+.teams-box .teams .team .overlay .number {
+    font-size: 80px;
+    margin-bottom:-24px;
+    position: relative;
+}
+.teams-box .teams .team .overlay .number .icon-ifa{
+    font-size: 20px;
+    font-weight:bold;
+    position: absolute;
+    top:8px;
+    right:-8px;
+    background-color:rgba(235, 226, 226, 0.404);
+    background-color:#fff;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.teams-box .teams .team .overlay .text{
+    text-align: center;
+}
+.teams-box .teams .team .overlay .text .sub{
+    font-size:20px;
+}
+.content {padding:30px 0;
+    color:#333;
+    text-align: center;
+}
+.content .title {
+    letter-spacing:.2px;
+}
+.content .text-end {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.content .btn {
+    border:1px solid palevioletred;
+    padding:5px 20px;
+    border-radius:30px;
+    color:palevioletred;
+    transition:.3s all;
+}
+.content .btn:hover{
+    background-color:palevioletred;
+    border-color:#fff;
+    color:#fff;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .teams-box .teams .team {
+        width:238px;
+        height:auto;
+    }
+}
+ 
+@media screen and (max-width:415px){
+    
+    .teams-box .teams .team .overlay{
+        width: 100%;
+        height: 100%;
+        opacity: 1;}
+    
+
+}
